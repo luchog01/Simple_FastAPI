@@ -1,6 +1,7 @@
 from time import time
 from fastapi import FastAPI, __version__
 from fastapi.responses import HTMLResponse
+import requests
 
 app = FastAPI()
 
@@ -29,4 +30,5 @@ async def root():
 
 @app.get('/ping')
 async def hello():
+
     return {'res': 'pong', 'version': __version__, "time": time()}
