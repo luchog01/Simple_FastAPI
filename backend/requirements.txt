@@ -1,5 +1,4 @@
 fastapi==0.111.0
-requests==2.31.0
-cachetools
+aiocache
 motor
-pandas
+python-dateutil
